@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>NTab Options</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header><h1>NTab Options</h1></header>
+  <form id="form">
+    <label>
+      Maximum tabs per window (n)
+      <input id="n" type="number" min="1" step="1" required>
+    </label>
+    <p class="hint">Pinned tabs don't count. When a window exceeds n, the oldest tabs are moved to NTab.</p>
+    <button type="submit">Save</button>
+    <span id="status"></span>
+  </form>
+  <script src="options.js"></script>
+</body>
+</html>

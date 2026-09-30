@@ -1,0 +1,14 @@
+:root { color-scheme: light dark; }
+body { font: 14px system-ui, sans-serif; max-width: 52rem; margin: 2rem auto; padding: 0 1rem; }
+header { display: flex; align-items: baseline; gap: 0.75rem; margin-bottom: 1rem; }
+h1 { margin: 0; font-size: 1.4rem; }
+.spacer { flex: 1; }
+#count, .host, .when, .hint { color: GrayText; font-size: 0.85em; }
+ul { list-style: none; padding: 0; margin: 0; }
+li { display: flex; align-items: center; gap: 0.6rem; padding: 0.35rem 0; border-bottom: 1px solid color-mix(in srgb, currentColor 15%, transparent); }
+li a { flex: 1; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.favicon { width: 16px; height: 16px; flex: none; }
+button.danger { color: #c62828; }
+form label { display: flex; flex-direction: column; gap: 0.3rem; max-width: 18rem; }
+form input { padding: 0.3rem; }
+form button { margin-top: 0.5rem; }

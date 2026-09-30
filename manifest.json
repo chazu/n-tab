@@ -1,0 +1,24 @@
+{
+  "manifest_version": 3,
+  "name": "NTab",
+  "version": "0.1.0",
+  "description": "Keep at most N tabs open per window. The oldest excess tabs are shunted to NTab, a OneTab-style list of unique pages.",
+  "permissions": ["tabs", "storage"],
+  "background": {
+    "service_worker": "background.js",
+    "scripts": ["background.js"]
+  },
+  "action": {
+    "default_title": "Open NTab"
+  },
+  "options_ui": {
+    "page": "options.html",
+    "open_in_tab": true
+  },
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "ntab@chazu.dev",
+      "strict_min_version": "115.0"
+    }
+  }
+}
