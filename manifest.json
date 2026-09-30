@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "NTab",
-  "version": "0.1.0",
+  "version": "0.0.1",
   "description": "Keep at most N tabs open per window. The oldest excess tabs are shunted to NTab, a OneTab-style list of unique pages.",
   "permissions": ["tabs", "storage"],
   "background": {
