@@ -10,5 +10,7 @@ li a { flex: 1; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-s
 .favicon { width: 16px; height: 16px; flex: none; }
 button.danger { color: #c62828; }
 form label { display: flex; flex-direction: column; gap: 0.3rem; max-width: 18rem; }
-form input { padding: 0.3rem; }
+form input, form select, form textarea { padding: 0.3rem; }
+form label.rules { max-width: 36rem; }
+form textarea { resize: vertical; font: 0.9rem ui-monospace, monospace; }
 form button { margin-top: 0.5rem; }

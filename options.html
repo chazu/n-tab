@@ -14,9 +14,24 @@
       <input id="n" type="number" min="1" step="1" required>
     </label>
     <p class="hint">Pinned tabs don't count. When a window exceeds n, the oldest tabs are moved to NTab.</p>
+    <label>
+      Reuse existing tabs
+      <select id="reuse-mode">
+        <option value="off">Off</option>
+        <option value="rules">Only matching URLs</option>
+        <option value="all">All URLs</option>
+      </select>
+    </label>
+    <p class="hint">When you open a duplicate page, move the existing tab to the far right, activate it, and close the new tab. Applies within the same window and container; pinned tabs are excluded.</p>
+    <label class="rules">
+      URLs or patterns (one per line)
+      <textarea id="reuse-rules" rows="6" spellcheck="false" aria-describedby="rules-hint" placeholder="https://example.com/dashboard&#10;https://github.com/*&#10;https://*.example.org/*"></textarea>
+    </label>
+    <p id="rules-hint" class="hint">Use full http:// or https:// URLs. * matches any number of characters (within the host or after it). Patterns select eligible pages; duplicates must still have the same full URL, including query and fragment. An empty list matches nothing.</p>
     <button type="submit">Save</button>
-    <span id="status"></span>
+    <span id="status" role="status"></span>
   </form>
+  <script src="reuse.js"></script>
   <script src="options.js"></script>
 </body>
 </html>
